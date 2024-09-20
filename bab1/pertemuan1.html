@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan Satu</title>
+  </head>
+
+  <!-- <center> -->
+    <h1>Ini Toko Ku</h1>
+    <img  src="toko.jpg" alt="gambar toko" width="50%" />
+    <p>
+      Saya menjual berbagai bahan makan pokok: <br />
+      <ol type="1">
+        <li>Motor</li>
+        <li>mobil</li>
+        <li>Pesawat</li>
+        <li>Helikopter</li>
+      </ol>
+      Beras <br />
+      Minyak <br />
+      Gula
+    </p>
+    <br />
+    <a href="https://www.instagram.com/accounts/onetap/?next=%2F" target="_blank"
+      >Ini social media tokoku</a
+    >
+    <br />
+    <font size="18" face="comic sans" color="blue">Pratikum WEB IF-A</font>
+  <table border="1">
+    <tr>
+        <td>No </td>
+        <td>Nama Barang </td>
+        <td>Harga </td>
+        <td rowspan="5">/kg</td>
+    </tr>
+    <tr>
+        <td>1 </td>
+        <td>Beras </td>
+        <td>11000 </td>
+    </tr>
+    <tr>
+        <td>2 </td>
+        <td>Minyak </td>
+        <td>18000 </td>
+    </tr>
+    <tr>
+        <td>3 </td>
+        <td>Gula </td>
+        <td>15000 </td>
+    </tr>
+    <tr>
+        <td colspan="3">Diskon 10%</td>
+    </tr>
+  </table> <br><br>
+  <form action="hasil.php" method="post">
+    <table>
+        <tr>
+            <td>Nama: <input type="text" name="nama"></td>
+        </tr>
+        <tr>
+            <td>Alamat: <textarea name="alamat" id="" cols="30" rows="10"></textarea></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="radio" value="kirim" name="pilih" checked>kirim
+                <input type="radio" value="ambil sendiri" name="pilih" checked>ambil sendiri
+
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="barang[]" value="beras">Beras
+                <input type="checkbox" name="barang[]" value="minyak">Minyak
+                <input type="checkbox" name="barang[]" value="gula">Gula
+            </td>
+        </tr>
+    </table>
+    <button type="submit" value="kirim">Submit</button>
+  </form>
+    <!-- </center> -->
+  <body></body>
+</html>

@@ -1,0 +1,40 @@
+• Ada dua orang, Benjamin dan istrinya, Bambie.
+• Mereka adalah pelanggan HomeCare, sebuah perusahaan yang bergerak di
+bidang furnitur mewah. HomeCare menjual berbagai set sofa. Setiap set
+sofa diberi label dengan nomor identifikasi dan label harga.
+• Setelah melihat set sofa selama satu jam, Benjamin dan Bambie memutuskan untuk membeli
+set 5 tempat duduk berbahan kulit berwarna hijau.
+• Mereka mendekati Sean, seorang tenaga penjualan, untuk melakukan pemesanan.
+
+• Saat menyampaikan permintaannya kepada Sean, Benjamin mengirimkan pesan kepada
+Sean, "Saya ingin membeli set 5 tempat duduk berbahan kulit hijau ini. Bisakah
+tolong kirimkan kepada saya paling lambat Rabu depan?"
+•
+Pesan yang dikirimkan Benjamin kepada Sean adalah pesan takeOrder.
+Berisi informasi seperti jenis set sofa (kulit hijau, set 5 tempat
+duduk) dan tanggal pengiriman (Rabu depan).
+• Parameter pesan takeOrder.
+• Menanggapi pesan Benjamin, Sean membalas Benjamin dengan
+mengembalikan hasil permintaannya.
+
+• Sean dapat menanggapi pesan takeOrder Benjamin karena dia
+memahaminya dan memiliki sarana untuk menangani permintaan Benjamin.
+• Meskipun Sean tahu bagaimana memenuhi permintaan Benjamin, Benjamin
+tidak. Faktanya, sering kali, pelanggan tidak mengetahui bagaimana
+tenaga penjualan memuaskan pesanannya.
+
+Sean, sebagai tenaga penjualan di HomeCare, memiliki tanggung jawab terhadap
+Benjamin. Dia mempertahankan tanggung jawabnya dengan menerapkan serangkaian
+operasi:
+1. Dia menentukan apakah ada persediaan yang cukup untuk memenuhi permintaan Benyamin.
+2. Dia menentukan apakah tanggal pengiriman yang diminta adalah tanggal yang cocok.
+3. Ia menginstruksikan staf gudang untuk mengirimkan barang ke alamat Benyamin
+pada tanggal yang diminta, jika kondisi di atas terpenuhi.
+4. Akhirnya, dia memberi tahu Benyamin hasil permintaannya.
+
+Misalnya Benjamin dan Sean adalah objek yang berinteraksi dengan
+mengirimkan pesan. Benjamin dengan demikian merupakan objek pengirim
+pesan, sedangkan Sean adalah objek penerima pesan.
+Permintaan takeOrder dari Benjamin ke Sean adalah contoh pesan.
+Ini mungkin memiliki informasi tambahan yang menyertainya
+yang dikenal sebagai parameter (atau argumen) pesan.

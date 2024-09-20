@@ -1,0 +1,35 @@
+/* h1 { 
+    font-size: 20pt;
+    font-style: oblique;
+    color: blue;
+    text-align: center;
+ } 
+
+p {
+    font-size: 10pt;
+    font-style: oblique;
+    color:pink;
+    text-align: right;
+}  */
+
+h1 { 
+    font-size: 20pt;
+    font-style: oblique;
+    color: blue;
+    text-align: center;
+ } 
+
+ /* #miring {
+    font-style: italic;
+    color: blueviolet;
+ }
+
+ .tebal {
+    font-weight: bold;
+    color: green;
+ } */
+
+ .tebal #miring {
+    font-style: italic;
+    color: blueviolet;
+ }

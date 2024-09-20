@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="logo.png" type="image/x-icon" sizes="16x16" />
+    <title>Ms. inn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!--   -->
+  <body
+    class="p-3 text-dark text-primary-emphasis border-primary-subtle rounded-3"
+    style="background-color: #ffffff"
+  >
+    <nav
+      class="navbar navbar-dark shadow-sm navbar-expand-lg"
+      style="background-color: #535349"
+    >
+      <div class="col">
+        <div class="container-fluid col-9" style="font-size: 20px">
+          <a class="navbar-brand" href="#">
+            <img
+              src="logo.png"
+              alt="Logo"
+              width="35"
+              class="d-inline-block align-text-top"
+            />
+            Ms. inn
+          </a>
+        </div>
+      </div>
+
+      <div class="col">
+        <div
+          class="collapse navbar-collapse container col-1"
+          id="navbarNavDropdown"
+          style="font-size: 20px"
+        >
+          <ul class="navbar-nav ml-5">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html#layanan">Layanan</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="pesan" style="background-color: #d4d4d4" class="p-5">
+      <form action="data.php" method="post" class="footer-expand-lg container">
+        <div class="row mb-3">
+          <label for="nama" class="col-sm-2 col-form-label">Nama</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nama" name="nama" />
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="nik" class="col-sm-2 col-form-label">NIK</label>
+          <div class="col-sm-10">
+            <input type="text" class="form-control" id="nik" name="nik" />
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Jenis Kelamin</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kelamin"
+                id="kelamin1"
+                value="Laki-laki"
+              />
+              <label class="form-check-label" for="kelamin1"> Laki-laki </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kelamin"
+                id="kelamin2"
+                value="Perempuan"
+              />
+              <label class="form-check-label" for="kelamin2"> Perempuan </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="row mb-3">
+          <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
+          <div class="col-sm-10">
+            <textarea
+              type="password"
+              class="form-control"
+              id="alamat"
+              name="alamat"
+            ></textarea>
+          </div>
+        </div>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Tipe Kamar</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kamar"
+                id="kamar1"
+                value="Standard"
+              />
+              <label class="form-check-label" for="kamar1">Standard </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kamar"
+                id="kamar2"
+                value="Superior"
+              />
+              <label class="form-check-label" for="kamar2"> Superior </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kamar"
+                id="kamar3"
+                value="Deluxe"
+              />
+              <label class="form-check-label" for="kamar3"> Deluxe </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="kamar"
+                id="kamar4"
+                value="Suite"
+              />
+              <label class="form-check-label" for="kamar4"> Suite </label>
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">
+            fasilitas Makanan
+          </legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="makanan1"
+                name="makanan"
+                value="option1"
+              />
+              <label class="form-check-label" for="makanan1"> Breakfast </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="makanan2"
+                name="makanan"
+                value="option2"
+              />
+              <label class="form-check-label" for="makanan2"> Lunch</label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                id="makanan3"
+                name="makanan"
+                value="option3"
+              />
+              <label class="form-check-label" for="makanan3"> Dinner </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="row mb-3">
+          <legend class="col-form-label col-sm-2 pt-0">Pembayaran</legend>
+          <div class="col-sm-10">
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pembayaran"
+                id="pembayaran1"
+                value="Tunai"
+              />
+              <label class="form-check-label" for="pembayaran1"> Tunai </label>
+            </div>
+            <div class="form-check">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="pembayaran"
+                id="pembayaran2"
+                value="Non-Tunai"
+              />
+              <label class="form-check-label" for="pembayaran2">
+                Non-Tunai
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <div class="mt-3 p-3 container">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            style="background-color: #535349"
+          >
+            Kirim
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <footer
+      class="footer footer-expand-lg p-0"
+      style="background-color: #535349"
+    >
+      <div class="row text-center" style="color: beige">
+        <p class="mt-2">
+          &copy 2023 by PT Dea Reigina . | All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

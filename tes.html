@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pembelian</title>
+</head>
+<body>
+    <h1>Terima Kasih atas Pembelian Anda!</h1>
+
+    <h2>Detail Pembelian:</h2>
+
+    <p>Nama: <span id="nama"></span></p>
+    <p>Alamat: <span id="alamat"></span></p>
+    <p>Metode Pengiriman: <span id="metodePengiriman"></span></p>
+    <p>Barang yang Dibeli: <span id="barangDibeli"></span></p>
+
+    <script>
+        // Mendapatkan nilai dari URL query string
+        const urlParams = new URLSearchParams(window.location.search);
+
+        // Mendapatkan nilai yang diinputkan dalam formulir
+        const nama = urlParams.get('nama');
+        const alamat = urlParams.get('alamat');
+        const metodePengiriman = urlParams.get('pilih');
+        const barangBeras = urlParams.get('beras');
+        const barangMinyak = urlParams.get('minyak');
+        const barangGula = urlParams.get('gula');
+
+        // Menampilkan nilai dalam elemen HTML
+        document.getElementById('nama').textContent = nama;
+        document.getElementById('alamat').textContent = alamat;
+        document.getElementById('metodePengiriman').textContent = metodePengiriman;
+
+        let barangDibeli = '';
+        if (barangBeras) {
+            barangDibeli += 'Beras, ';
+        }
+        if (barangMinyak) {
+            barangDibeli += 'Minyak, ';
+        }
+        if (barangGula) {
+            barangDibeli += 'Gula, ';
+        }
+        // Menghilangkan koma terakhir
+        barangDibeli = barangDibeli.replace(/,\s*$/, '');
+        document.getElementById('barangDibeli').textContent = barangDibeli;
+    </script>
+</body>
+</html>

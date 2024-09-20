@@ -1,0 +1,65 @@
+<!-- Notifikasi start -->
+    <!-- Flexbox container for aligning the toasts -->
+    <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100">
+
+        <!-- Then put toasts within -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                <?php
+                    if (isset($_GET['pesan'])) {
+                        if ($_GET['pesan'] == "gagal") {
+                            echo "Login gagal! username dan password salah!";
+                        } else if ($_GET['pesan'] == "logout") {
+                            echo "Anda telah berhasil logout";
+                        } else if ($_GET['pesan'] == "belum_login") {
+                            echo "Anda harus login untuk mengakses halaman admin";
+                        }
+                    }
+                    ?>
+            </div>
+        </div>
+    </div>
+    <!-- Notifikasi end -->
+saya ingin notifikasi muncul setiap kali menerima pesan dari cek_login.php dibawah ini:
+<?php 
+   session_start(); 
+   include 'koneksi.php';
+
+    $username = $_POST['username'];
+    $password = $_POST['password'];
+    $kategori = $_POST['kategori'];
+    
+
+    if ($kategori == 'admin') {
+        $$data = mysqli_query($connect,"select * from admin where username='$username' 
+        and password='$password'")or die (mysqli_error($konek));
+        $cek = mysqli_num_rows($data);
+ 
+        if($cek > 0){
+            $_SESSION['username'] = $username;
+            $_SESSION['status']   = "login";
+            header("location:homeadmin.php");
+        }else{
+            header("location:index.php?pesan=gagal");
+        }
+    } elseif ($kategori == 'pengguna') {
+        $data = mysqli_query($connect,"select * from pengguna where username='$username' 
+    and password='$password'")or die (mysqli_error($konek));
+        $cek = mysqli_num_rows($data);
+    
+        if($cek > 0){
+            $_SESSION['username'] = $username;
+            $_SESSION['status']   = "login";
+            header("location:home.php");
+        }else{
+            header("location:index.php?pesan=gagal");
+        }
+    }
+     
+?>

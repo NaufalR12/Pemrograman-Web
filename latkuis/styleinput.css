@@ -1,0 +1,106 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #15202d;
+  font-family: 'Monstserat', sans-serif;
+  color: #655827;
+}
+
+nav{
+  display: flex;
+  padding: 0px 2%;
+  background-color: #bcb081;
+  width: 96%;
+  box-shadow: 0 6px 10px rgba(0,0,0,.2);
+  z-index: 1; /* Layering */
+  align-items: center;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+}
+
+nav ul li{
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 18px;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: white;
+  transition: background-color .20s ease-in-out, padding .20s ease-in-out, color .20s ease-in-out, border-radius .2s ease-in-out;
+}
+
+nav ul li a:hover{
+  color: #655827;
+  background-color: rgb(255, 255, 255);
+  padding: 4px 14px;
+  border-radius: 5px;
+}
+
+.title-logo{
+  font-family: 'Poppins Medium', sans-serif;
+  font-size: 20px;
+}
+
+.full-logo a{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.content{
+  padding: 4%;
+  color: #bcb081;
+}
+
+.content h1{
+  text-align: center;
+}
+
+form{
+  margin-top: 35px;
+  padding: 0px 3%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  font-family: 'Monstserat', sans-serif;
+}
+
+.form-items{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+}
+
+.form-items input{
+  width: 70%;
+  height: 38px;
+  border-radius: 6px;
+}
+
+.form-items textarea{
+  width: 70%;
+  height: 78px;
+  border-radius: 6px;
+}
+
+.tempat-tgl{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 70%;
+}
+
+.gender{
+  display: flex;
+  justify-content: flex-start;
+  width: 700px;
+  height: 6px;
+}
